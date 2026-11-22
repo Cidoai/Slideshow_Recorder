@@ -1,0 +1,23 @@
+# Output and temporary files
+output/
+*.mp4
+*.wav
+*.m4a
+report.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+
+# Editors
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

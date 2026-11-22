@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "slideshow-recorder"
+version = "0.1.0"
+description = "Turn a narration recording plus static images into a small MP4."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["slideshow", "video", "ffmpeg", "lecture", "screen-recording"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Video",
+]
+dependencies = [
+    "pillow>=10",
+    "numpy>=1.24",
+    "sounddevice>=0.4.6",
+]
+
+[project.scripts]
+slideshow = "slideshow.cli:main"
+
+[tool.setuptools]
+packages = ["slideshow"]
